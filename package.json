@@ -1,0 +1,8 @@
+{
+    "name": "dnd-spygames",
+    "version": "0.1",
+    "author": "Amol Kapoor <theahura@gmail.com>",
+    "dependencies": {
+        "socket.io": "1.7.3"
+    }
+}

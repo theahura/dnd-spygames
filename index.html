@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Spy Games</title>
+		<link rel="icon" type="image/png" href="img/favicon.png">
+
+		<!-- FONTS -->
+		<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+
+		<link rel="stylesheet" href="css/main.css" />
+
+		<script src="http://localhost:8000/socket.io/socket.io.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	</head>
+
+	<body>
+		<div class='fixed'>
+			<div class='username'>
+			</div>
+			<div class='chat'>
+				<form class='chat-input'>
+						<input type="text" name="chat-in" value="">
+						<input type="submit">
+				</form>
+			</div>
+		</div>
+
+		<div 'attack-encounter-holder'>
+			<form class='attack-form-holder'>
+				<ul class='attack-form'>
+					<li>
+						<div> Speed Check: </div>
+						<input type="number" name="speed" value="0">
+					</li>
+					<li>
+						<div> Accuracy Check: </div>
+						<input type="number" name="accuracy" value="0">
+					</li>
+					<li>
+						<div> Damage on hit: </div>
+						<input type="number" name="damage" value="0">
+					</li>
+					<li>
+						<div> Other Info: </div>
+						<input type="text" name="other" value="">
+					</li>
+					<li>
+						<input type="submit">
+					</li>
+				</ul>
+			</form>
+			<div 'attack-ordering'>
+			<div>
+		</div>
+
+		<div class='mastermind'>
+		</div>
+		
+		<script src="js/main.js"></script>
+	</body>
+</html>
