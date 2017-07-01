@@ -12,6 +12,7 @@
 
 		<script src="http://localhost:8000/socket.io/socket.io.js"></script>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src="js/droll.min.js"></script>
 	</head>
 
 	<body>
@@ -19,39 +20,44 @@
 			<div class='username'>
 			</div>
 			<div class='chat'>
-				<form class='chat-input'>
-						<input type="text" name="chat-in" value="">
-						<input type="submit">
-				</form>
+				<ul class='chat-text'>
+				</ul>
+				<div class='chat-input'>
+						<textarea rows="3" cols="50" class='chat-input-textarea'></textarea>
+				</div>
 			</div>
 		</div>
 
-		<div 'attack-encounter-holder'>
-			<form class='attack-form-holder'>
+		<div class='attack-encounter-holder'>
+			<div class='attack-form-holder'>
 				<ul class='attack-form'>
 					<li>
 						<div> Speed Check: </div>
-						<input type="number" name="speed" value="0">
+						<input type="text" id="speed" value="1d1">
 					</li>
 					<li>
 						<div> Accuracy Check: </div>
-						<input type="number" name="accuracy" value="0">
+						<input type="text" id="accuracy" value="1d1">
 					</li>
 					<li>
 						<div> Damage on hit: </div>
-						<input type="number" name="damage" value="0">
+						<input type="text" id="damage" value="1d1">
 					</li>
 					<li>
 						<div> Other Info: </div>
-						<input type="text" name="other" value="">
+						<input type="text" id="other" value="">
 					</li>
 					<li>
-						<input type="submit">
+						<div class='button attack-form-submit'> Submit </div>
+					</li>
+					<li>
+						<div class='button'> Save as Macro </div>
+						<input type="text" id="macro-name" value="macro-name">
 					</li>
 				</ul>
-			</form>
-			<div 'attack-ordering'>
-			<div>
+			</div>
+			<div class='attack-ordering'>
+			</div>
 		</div>
 
 		<div class='mastermind'>
