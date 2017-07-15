@@ -2,7 +2,7 @@
  * @Author: Amol Kapoor
  * @Description: Handles client for dnd spygames.
  */
-var socket = io('http://localhost:8000');
+var socket = io('http://54.164.115.173:8000');
 var username = window.prompt('What is your name?');
 socket.emit('setName', {'name':username});
 
