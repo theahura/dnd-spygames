@@ -16,7 +16,7 @@ ul, li {
     list-style: none;
 }
 
-.hidden {
+.dm-only {
 	display: none;
 }
 
@@ -76,13 +76,13 @@ ul, li {
 			}	
 
 .attack-encounter-holder {
-	width: 100%;
+	width: 60%;
 	height: 100%
 }
 
 	.attack-form-holder {
 		width: 100%;
-		height: 100%
+		height: 50%
 	}
 
 		.attack-form {
@@ -92,7 +92,7 @@ ul, li {
 
 			.attack-form>li{
 				width: 100%;
-				height: 4%;
+				height: 10%;
 				display: flex;
 				padding: 1%;
 			}
@@ -105,7 +105,32 @@ ul, li {
 					width:100%;
 				}
 
+		.macro-list {
+			display: flex;
+			flex-flow: row wrap;
+		}
+			
+			.macro-list>li {
+				border: solid;
+				margin: 1%;
+			}
+
+				.delete-macro {
+					color: red;
+				}
+
 	.attack-ordering {
 		width: 100%;
 		height: 100%;
+		text-align: center;
 	}
+
+		.attacks {
+			display: flex;
+			font-size: 2vw;	
+		}
+
+			.attacks>li {
+				padding: 3%;
+				border: solid;
+			}

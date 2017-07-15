@@ -47,22 +47,30 @@
 						<div> Other Info: </div>
 						<input type="text" id="other" value="">
 					</li>
+					<li class='dm-only'>
+						<div> Sender: </div>
+						<input type="text" id="sender" value="">
+					</li>
 					<li>
 						<div class='button attack-form-submit'> Submit </div>
 					</li>
 					<li>
-						<div class='button'> Save as Macro </div>
+						<div class='button macro-submit'> Save as Macro </div>
 						<input type="text" id="macro-name" value="macro-name">
+					</li>
+					<li>
+						<ul class='macro-list'></ul>
 					</li>
 				</ul>
 			</div>
-			<div class='attack-ordering'>
+			<div class='dm-only attack-ordering'>
+				<div class="button order-attacks"> Order </div>
+				<div class="button clear-attacks"> Clear </div>
+				<ul class="attacks"></ul>
 			</div>
-		</div>
-
-		<div class='mastermind'>
 		</div>
 		
 		<script src="js/main.js"></script>
+		<script src="js/dm.js"></script>
 	</body>
 </html>
