@@ -3,7 +3,7 @@
  * @Description: Runs server for spy games.
  */
 
-var io = require('socket.io').listen(8000)
+var io = require('socket.io').listen(4000)
 
 console.log('server running')
 
